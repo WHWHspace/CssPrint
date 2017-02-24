@@ -1,0 +1,39 @@
+.print-div{
+    width: 21cm;
+}
+
+table {
+    width: 100%;
+}
+
+label {
+    width: 100px;
+}
+
+.title-divide-line {
+    height: 10px;
+    border: none;
+    border-top: 10px groove skyblue;
+}
+
+.paragraph-divide-line {
+    height: 5px;
+    border: none;
+    border-top: 5px ridge green;
+}
+
+.list-input {
+    width: 95%;
+    border: none;
+}
+
+.title-1 {
+    font-size: 25px;
+}
+
+.title-2 {
+    font-size: 20px;
+}
+
+
+

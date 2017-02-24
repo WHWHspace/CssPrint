@@ -1,0 +1,54 @@
+/*设置样式只在打印时使用*/
+@media print {
+    /*基本样式*/
+    body {
+        color: #000;
+        background: #fff;
+    }
+
+    /*隐藏不相关的部分：如导航，背景*/
+    nav, aside,button,input[type="button"],input[type="submit"], .not-print {
+        display: none;
+    }
+
+    body, article {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*删除输入框的边框*/
+    input {
+        border: none;
+    }
+
+    /*设置离纸张边缘的距离*/
+    @page {
+        margin: 2cm;
+    }
+
+    /*h1一般作为新章节*/
+    h1 {
+        page-break-before: always;
+    }
+
+    /*标题后面不要分页*/
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+
+    /*article 永远在新一页开始*/
+    article {
+        page-break-before: always;
+    }
+
+    /*列表，图片， 表格内不要分页*/
+    ul, img, table {
+        page-break-inside: avoid;
+    }
+
+    /*防止图片过宽*/
+    img {
+        max-width: 100% !important;
+    }
+}
